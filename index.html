@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Современный Лэндинг с Модальным Окном</title>
+  <link rel="stylesheet" crossorigin href="/assets/index-Dw-MSrM3.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Добро пожаловать на наш сайт!</h1>
+        <h2>Мы предлагаем инновационные решения для вашего бизнеса.</h2>
+        
+        <div class="video-container">
+            <!-- Локальное видео с автопроигрыванием и без звука -->
+            <video autoplay muted loop>
+                <source src="/assets/video-B029Gj9Y.mp4" type="video/mp4">
+                Ваш браузер не поддерживает видео.
+            </video>
+        </div>
+        
+        <a href="javascript:void(0);" class="cta-btn" id="showModalBtn">Узнать больше</a>
+    </div>
+
+    <!-- Модальное окно -->
+    <div class="modal" id="myModal">
+        <div class="modal-content">
+            <h2>Это модальное окно</h2>
+            <p>Вы только что нажали на кнопку и теперь видите это окно с текстом. Мы можем показать дополнительную информацию или предложить действия.</p>
+            <button class="close-btn" id="closeModalBtn">Закрыть</button>
+        </div>
+    </div>
+
+    <script>
+        // Открытие модального окна
+        document.getElementById('showModalBtn').addEventListener('click', function() {
+            document.getElementById('myModal').style.display = 'flex';
+        });
+
+        // Закрытие модального окна
+        document.getElementById('closeModalBtn').addEventListener('click', function() {
+            document.getElementById('myModal').style.display = 'none';
+        });
+
+        // Закрытие модального окна при клике вне его
+        window.addEventListener('click', function(event) {
+            if (event.target === document.getElementById('myModal')) {
+                document.getElementById('myModal').style.display = 'none';
+            }
+        });
+    </script>
+
+</body>
+</html>
