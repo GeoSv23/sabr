@@ -6,17 +6,16 @@
 
 body {
   font-family: "Arial", sans-serif;
-  background-color: #f4f4f4;
+  background-color: #aeaeae;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   margin: 0;
-  overflow: hidden;
 }
 
 .container {
-  text-align: center;
+  /* text-align: center; */
   max-width: 1200px;
   width: 100%;
   padding: 40px;
@@ -26,6 +25,8 @@ h1 {
   font-size: 3.2rem;
   color: #333;
   margin-bottom: 30px;
+  border-bottom: 2px solid yellowgreen;
+  padding-bottom: 15px;
 }
 
 h2 {
@@ -52,7 +53,7 @@ video {
 
 .cta-btn {
   display: inline-block;
-  background-color: #ff6200;
+  background-color: yellowgreen;
   color: #fff;
   padding: 18px 45px;
   font-size: 1.3rem;
@@ -91,7 +92,12 @@ video {
 }
 
 .modal-content h2 {
-  font-size: 2rem;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: grey;
+}
+.modal-content h1 {
+  font-size: 1rem;
   margin-bottom: 20px;
   color: #333;
 }
@@ -120,6 +126,7 @@ video {
 @media (max-width: 768px) {
   h1 {
     font-size: 2.8rem;
+    margin-top: 30px;
   }
 
   h2 {
@@ -129,6 +136,7 @@ video {
   .cta-btn {
     padding: 15px 35px;
     font-size: 1.1rem;
+    margin-left: 50px;
   }
 
   .video-container {
